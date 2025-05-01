@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
     emailForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Prevent the default form submission
 
-
         alert("Your message has been sent! Thank you for your feedback!");
         emailForm.reset();
         displayQuestionOfDay(); // Display a new question after submission
