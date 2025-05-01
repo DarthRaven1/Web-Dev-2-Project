@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Your Thoughts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Share Your Thoughts</h1>
+        <nav>
+            <ul>
+                <li><a href="Project Index.html">Home</a></li>
+                <li><a href="Project Game.html">Mini-Game Challenge</a></li>
+                <li><a href="poll.html">Poll</a></li>
+                <li><a href="contact.html">Share Your Thoughts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-form">
+            <h2>What Can I do to improve this site?</h2>
+            <form 
+            action="https://formspree.io/f/mjkwyvwj"
+            method="POST">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div id="question-of-day-container">
+                    <label for="qotd" id="question-of-day-label"></label>
+                    <br>
+                    <textarea id="qotd" name="qotd" placeholder="Optional answer here..."></textarea>
+                </div>
+                <div>
+                    <label for="message">Feedback:</label> 
+                    <br>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 My Project</p>
+    </footer>
+
+    <script src="contact.js"></script>
+</body>
+</html>
