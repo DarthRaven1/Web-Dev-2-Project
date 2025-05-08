@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poll</title>
+    <title>Mini-Game Challenge</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
-        <h1>Poll</h1>
+        <h1>Mini-Game Challenge</h1>
         <nav>
             <ul>
                 <li><a href="Project Index.html">Home</a></li>
@@ -21,15 +20,12 @@
     </header>
 
     <main>
-        <section id="poll-area">
-            <h2 id="poll-question"></h2>
-            <div id="poll-options"></div>
-            <button id="submit-poll">Submit Answer</button>
-            <div id="results-container" style="display: none;">
-                <h3>Poll Results</h3>
-                <canvas id="results-chart"></canvas>
-                <p id="results-text"></p>
-            </div>
+        <section id="game-area">
+            <h2>Guess the Number!</h2>
+            <p>I'm thinking of a number between 1 and 100. Try to guess it!</p>
+            <input type="number" id="guess-input">
+            <button id="guess-button">Guess</button>
+            <p id="message"></p>
         </section>
     </main>
 
@@ -37,6 +33,6 @@
         <p>&copy; 2025 My Project</p>
     </footer>
 
-    <script src="poll.js"></script>
+    <script src="Project Game.js"></script>
 </body>
 </html>
